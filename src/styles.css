@@ -7,6 +7,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.main-container {
+  width: 80%;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+}
+
 a {
   color: #67b9be;
   text-decoration: none;
