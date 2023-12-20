@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HackerNewsService } from '../../services/hacker-news/hacker-news.service';
-import {StoryComponent} from '../../components/story/story.component';
+import { StoryComponent } from '../../components/story/story.component';
 import { Story } from '../../interfaces/story';
 import { Subscription } from 'rxjs';
 
@@ -9,10 +9,10 @@ import { Subscription } from 'rxjs';
   selector: 'app-stories',
   standalone: true,
   imports: [CommonModule, StoryComponent],
-  templateUrl: './stories.component.html',
+  templateUrl: './top-stories.component.html',
   providers: [HackerNewsService]
 })
-export class StoriesComponent implements OnInit, OnDestroy {
+export class TopStoriesComponent implements OnInit, OnDestroy {
 
   static readonly STORY_LIMIT = 30;
   topStories: Story[] = [];
@@ -22,7 +22,7 @@ export class StoriesComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.hackerNewsServiceSubscription = this.hackerNewsService.getTopStories().subscribe((ids: number[]) => {
-      const storyIds = ids.slice(0, StoriesComponent.STORY_LIMIT);
+      const storyIds = ids.slice(0, TopStoriesComponent.STORY_LIMIT);
       let storiesFetched = 0;
 
       storyIds.forEach((id: number, index: number) => {
