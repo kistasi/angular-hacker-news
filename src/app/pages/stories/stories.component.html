@@ -1,5 +1,7 @@
-<ul>
-  <li *ngFor="let story of topStories">
-    <a [href]="story.url" target="_blank">{{ story.title }}</a>
-  </li>
-</ul>
+<div>
+  <app-story
+    *ngFor="let story of topStories"
+    [link]="story.link"
+    [title]="story.title">
+  </app-story>
+</div>
