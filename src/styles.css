@@ -1,3 +1,10 @@
+:root {
+  --primary-layout-color: #4834d4ed;
+  --secondary-layout-color: #dff9fb;
+  --primary-text-color: #aaa;
+  --primary-link-color: #67b9be;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +15,7 @@ body {
 }
 
 a {
-  color: #67b9be;
+  color: var(--primary-link-color);
   text-decoration: none;
 }
 
@@ -16,9 +23,9 @@ a:hover {
   text-decoration: underline;
 }
 
-.layout-element{
-  background: #4834d4ed;
-  color: #dff9fb;
+.layout-element {
+  background: var(--primary-layout-color);
+  color: var(--primary-text-color);
   text-align: center;
   padding: 1em 0;
 }

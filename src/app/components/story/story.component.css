@@ -1,12 +1,12 @@
 .story {
-  background: #dff9fb;
+  background: var(--secondary-layout-color);
   margin: 2em;
   padding: 1em;
   border-radius: 8px;
 }
 
 .story a {
-  color: black;
+  color: var(--dark-text-color);
   display: block;
 }
 
@@ -20,10 +20,10 @@
 
 .story .meta {
   font-size: 0.8em;
-  color: #aaa;
+  color: var(--primary-text-color);
 }
 
 .story .meta a {
-  color: #aaa;
+  color: var(--primary-text-color);
   text-decoration: underline;
 }
