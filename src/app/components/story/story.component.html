@@ -1,6 +1,4 @@
 <div class="story">
   <a [href]="url" target="_blank">{{ title }}</a>
-  Author: <a [href]="authorLink" target="_blank">{{ author }}</a>
-  <span>Points: {{ score }}</span><br>
-  Time: {{ time | relativeTime }}
+  <span class="meta">by <a class="author-link"[href]="authorLink" target="_blank">{{ author }}</a> | {{ score }} points | {{ time | relativeTime }}</span>
 </div>

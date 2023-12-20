@@ -1,15 +1,29 @@
 .story {
-  background: #686de0;
+  background: #dff9fb;
   margin: 2em;
-  padding: 2em;
+  padding: 1em;
   border-radius: 8px;
 }
 
 .story a {
-  color: #dff9fb;
+  color: black;
   display: block;
 }
 
 .story a:hover {
   text-decoration: none;
+}
+
+.story .author-link {
+  display: inline-block;
+}
+
+.story .meta {
+  font-size: 0.8em;
+  color: #aaa;
+}
+
+.story .meta a {
+  color: #aaa;
+  text-decoration: underline;
 }
