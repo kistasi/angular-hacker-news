@@ -1,1 +1,5 @@
-<p>stories works!</p>
+<ul>
+  <li *ngFor="let story of topStories">
+    <a [href]="story.url" target="_blank">{{ story.title }}</a>
+  </li>
+</ul>
