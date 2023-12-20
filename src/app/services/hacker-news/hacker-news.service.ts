@@ -12,8 +12,8 @@ export class HackerNewsService {
 
   constructor(private http: HttpClient) { }
 
-  getTopStories(): any {
-    return this.http.get(`${HackerNewsService.BASE_URL}/topstories.json`);
+  getTopStories(): Observable<number[]> {
+    return this.http.get<number[]>(`${HackerNewsService.BASE_URL}/topstories.json`);
   }
 
   getStory(id: number): Observable<Story> {
