@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HackerNewsService } from '../../services/hacker-news.service';
+import { HackerNewsService } from '../../services/hacker-news/hacker-news.service';
 import {StoryComponent} from '../../components/story/story.component';
 
 @Component({

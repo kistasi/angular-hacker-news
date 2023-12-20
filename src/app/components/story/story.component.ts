@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { RelativeTimePipe } from '../../pipes/relative-time.pipe';
+import { RelativeTimePipe } from '../../pipes/relative-time/relative-time.pipe';
 
 @Component({
   selector: 'app-story',
