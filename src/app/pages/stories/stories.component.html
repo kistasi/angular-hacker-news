@@ -1,7 +1,10 @@
 <div>
   <app-story
     *ngFor="let story of topStories"
-    [link]="story.link"
-    [title]="story.title">
+    [url]="story.url"
+    [title]="story.title"
+    [author]="story.by"
+    [score]="story.score"
+    [time]="story.time">
   </app-story>
 </div>

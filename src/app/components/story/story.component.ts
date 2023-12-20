@@ -1,13 +1,23 @@
 import { Component, Input } from '@angular/core';
+import { RelativeTimePipe } from '../../pipes/relative-time.pipe';
 
 @Component({
   selector: 'app-story',
   standalone: true,
-  imports: [],
+  imports: [
+    RelativeTimePipe
+  ],
   templateUrl: './story.component.html',
   styleUrl: './story.component.css'
 })
 export class StoryComponent {
-  @Input() link: string = '';
+  @Input() url: string = '';
   @Input() title: string = '';
+  @Input() score: number = 0;
+  @Input() author: string = '';
+  @Input() time: number = 0;
+
+  get authorLink(): string {
+    return `https://news.ycombinator.com/user?id=${this.author}`;
+  }
 }
