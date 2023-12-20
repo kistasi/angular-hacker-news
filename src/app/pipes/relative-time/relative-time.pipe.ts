@@ -6,7 +6,6 @@ import { formatDistance } from 'date-fns';
   standalone: true
 })
 export class RelativeTimePipe implements PipeTransform {
-
   transform(value: number): string {
     return formatDistance(value * 1000, Date.now(), {addSuffix: true});
   }
