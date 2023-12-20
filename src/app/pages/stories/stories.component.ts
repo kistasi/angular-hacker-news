@@ -18,11 +18,13 @@ export class StoriesComponent implements OnInit {
 
   ngOnInit(): void {
     this.hackerNewsService.getTopStories().subscribe((ids: number[]) => {
-      ids.slice(0, 30).forEach(id => {
+      ids.slice(0, 30).forEach((id, index) => {
         this.hackerNewsService.getItem(id).subscribe(story => {
-          this.topStories.push(story);
+          this.topStories.push({index: index + 1, ...story});
         });
       });
     });
+
+    this.topStories.sort((a, b) => a.index - b.index);
   }
 }
