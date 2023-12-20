@@ -7,12 +7,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.main-container {
-  width: 80%;
-  border: 1px solid #ccc;
-  margin: 0 auto;
-}
-
 a {
   color: #67b9be;
   text-decoration: none;
@@ -20,4 +14,11 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.header-and-footer {
+  background: #4834d4ed;
+  color: #dff9fb;
+  text-align: center;
+  padding: 1em 0;
 }

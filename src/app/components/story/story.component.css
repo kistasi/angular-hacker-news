@@ -1,0 +1,15 @@
+.story {
+  background: #686de0;
+  margin: 2em;
+  padding: 2em;
+  border-radius: 8px;
+}
+
+.story a {
+  color: #dff9fb;
+  display: block;
+}
+
+.story a:hover {
+  text-decoration: none;
+}

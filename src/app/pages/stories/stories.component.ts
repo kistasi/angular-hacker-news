@@ -8,7 +8,6 @@ import {StoryComponent} from '../../components/story/story.component';
   standalone: true,
   imports: [CommonModule, StoryComponent],
   templateUrl: './stories.component.html',
-  styleUrl: './stories.component.css',
   providers: [HackerNewsService]
 })
 export class StoriesComponent implements OnInit {
